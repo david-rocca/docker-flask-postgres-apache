@@ -1,0 +1,12 @@
+Click
+Flask
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+psycopg2-binary
+flask-security
+flask-sqlalchemy
+flask-migrate
+bcrypt
+future
