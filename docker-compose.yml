@@ -8,6 +8,7 @@ services:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=changeme
             - POSTGRES_DB=databasename
+        container_name: flask-db
     web:
         build:
             context: .
@@ -18,8 +19,9 @@ services:
             - DATABASE_NAME=databasename
         ports:
             - "80:80"
-        restart: always
+        container_name: flask-web
         depends_on: 
             - db
 volumes: 
     postgres_data:
+
